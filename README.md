@@ -50,6 +50,23 @@ IP                  | Hostname
 
 ---
 
+## Git Checkout
+Executes ```git checkout``` in all subdirectories of the current working dir.
+
+### Usage
+Call this script from within a directory that contains (multiple) git repos, each in
+their own (sub)directory.
+```.\Git-Checkout.ps1```
+
+You can also specify the branch you want to checkout directly by running:
+```.\Git-Checkout.ps1 branchname```
+
+### Note
+The branch must exist locally, it does not create it from a remote branch when not
+checked out earlier.
+
+---
+
 ## Git Fetch
 Executes ```git fetch``` in all subdirectories of the current working dir.
 
