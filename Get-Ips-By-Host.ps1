@@ -1,4 +1,4 @@
-﻿clear
+﻿Clear-Host
 
 if ($args.count -lt 1) {
     Write-Host "Call this script with the domain name(s) you want to get the IP address of."

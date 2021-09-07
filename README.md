@@ -47,3 +47,23 @@ IP                  | Hostname
 40.113.200.201      | microsoft.com
 13.94.192.98        | azure.com
 ```
+
+---
+
+## Git Fetch
+Executes ```git fetch``` in all subdirectories of the current working dir.
+
+### Usage
+Call this script from within a directory that contains (multiple) git repos, each in
+their own (sub)directory.
+```.\Git-Fetch.ps1```
+
+---
+
+## Git Pull
+Executes ```git pull``` in all subdirectories of the current working dir.
+
+### Usage
+Call this script from within a directory that contains (multiple) git repos, each in
+their own (sub)directory.
+```.\Git-Pull.ps1```
