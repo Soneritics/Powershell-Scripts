@@ -6,6 +6,14 @@ Currently, this repo contains the following scripts:
 
 * Add alias for Office 365 email
 * Get IP addresses by host name(s)
+* Multiple Git operations
+* Unzip all files directly into the current working directory
+
+## Adding to the PATH environment variable
+Powershell's PATH environment variable works a little different than the old command line.
+To add the scripts to the PATH environment, add the path to the registry:
+* HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment
+* Key: Path
 
 ## Add alias for Office 365 email
 Add a mail alias for an Office 365 mail account using a simple Powershell script
@@ -84,3 +92,14 @@ Executes ```git pull``` in all subdirectories of the current working dir.
 Call this script from within a directory that contains (multiple) git repos, each in
 their own (sub)directory.
 ```.\Git-Pull.ps1```
+
+---
+
+## Unzip all zip files into the current directory
+Extract all the zip files in a directory, straight into the directory.
+So if there is no folder structure inside the zip file, all the files will
+go directly to the working directory.
+
+### Usage
+Call this script from within a directory that contains multiple zip files.
+```.\Unzip-All.ps1```
