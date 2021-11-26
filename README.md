@@ -18,6 +18,12 @@ To add the scripts to the PATH environment, add the path to the registry:
 ## Add alias for Office 365 email
 Add a mail alias for an Office 365 mail account using a simple Powershell script
 
+### Prerequisites
+Install he ExchangeOnlineManagement Powershell module using the command:
+```ps
+Install-Module ExchangeOnlineManagement
+```
+
 ### Settings
 Set the following settings in the script:
 ```ps
